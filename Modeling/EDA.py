@@ -66,3 +66,6 @@ plt.title("Average hotel rating by review vs hotel rating in Trip Advisor")
 review.groupby('hotel_rating_hotel').agg('mean')['hotel_rating_review']
 
 #%%
+review.to_pickle('files/eda.pkl')
+
+#%%
