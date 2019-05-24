@@ -6,6 +6,9 @@ You are planning on visiting Atlanta and you are interested in getting the best 
 This project is an end-to-end project that will scrape hotel information and reviews on each hotel using a pipeline to my Mongo Database. Then I will cluster reviews using TF-IDF and K-means. Then I will cluster the hotel based on amenities avaliable and other characteristics. After, I will include a demo using Jupyter Notebook.
 ## Tools
 Python 3.6.7
+
 MongoDB
+
 Scrapy
+
 Microsoft Azure Virtual Machine
