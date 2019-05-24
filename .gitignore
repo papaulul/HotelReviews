@@ -2,4 +2,10 @@ flasky/*
 .vscode/*
 .ipynb_checkpoints/*
 files/*
-Scraping/*
+Scraping/.ipynb_checkpoints
+Scraping/debug.log
+Scraping/geckodriver.log
+Scraping/scrapy.cfg
+Scraping/Hotel_Scrape/__pycache__/*
+Scraping/Hotel_Scrape/spiders/__pycache__/*
+Modeling/.ipynb_checkpoints/*

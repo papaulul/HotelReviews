@@ -75,7 +75,7 @@ for ind,value in enumerate(versus['amenities']):
         versus.set_value(ind,ele, True) 
 # Returns columns back to hotel and removes amenities         
 hotel = hotel.merge(versus.drop('amenities',axis=1), how = 'inner', on ="hotel_name").drop('amenities',axis=1)
-
+hotel.to_pickle('files/hotel_info.pkl')
 #%%
 reviews['hotel_name'].loc[reviews[reviews['hotel_name'] == "Hotel Indigo Atlanta – Vinings"].index]= "Hotel Indigo Atlanta - Vinings"
 reviews['hotel_name'].loc[reviews[reviews['hotel_name'] == 'DoubleTree by Hilton Hotel Atlanta North Druid Hills – Emory Area'].index]= 'DoubleTree by Hilton Hotel Atlanta North Druid Hills - Emory Area'
