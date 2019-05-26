@@ -1,25 +1,10 @@
 import scrapy
-from selenium import webdriver
 import time
 from Hotel_Scrape.items import hotelItem
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import TimeoutException
-from selenium.common.exceptions import StaleElementReferenceException
-from selenium.common.exceptions import WebDriverException
 class hotel_info(scrapy.Spider):
     name = 'hotel'
     allowed_domains=["tripadvisor.com"]
     start_urls =['https://www.tripadvisor.com/Hotels-g60898-Atlanta_Georgia-Hotels.html' ]
-    """
-    def __init__(self):
-        #Mac
-        self.driver = webdriver.Chrome('/Users/Work/Dropbox/Misc/chromedriver')
-
-        #Windows
-        #self.driver = webdriver.Chrome('C:\\Users\\Paul\\Desktop\\chromedriver')
-    """
     def parse(self, response):
         """
         This main parse will go through the webpage with all hotels within
