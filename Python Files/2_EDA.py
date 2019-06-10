@@ -36,13 +36,6 @@ count_review[count_review.values <= 50]
 reviews.groupby('hotel_rating_review').agg('count')['review']
 
 #%%
-for i in reviews.columns[2:]:
-    try : 
-        print(reviews.groupby(i).agg('count')['review'])
-    except:
-        print("Not Compatible for ", i)
-
-#%%
 plt.scatter(reviews.groupby('hotel_rating_hotel').agg('mean')['hotel_rating_review'].index,reviews.groupby('hotel_rating_hotel').agg('mean')['hotel_rating_review'].values)
 plt.title("Average hotel rating by review vs hotel rating in Trip Advisor")
 
